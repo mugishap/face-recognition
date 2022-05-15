@@ -1,4 +1,4 @@
-import 
+import opencv1
 faces_cascade=opencv1.CascadeClassifier("haarcascade_frontalface_default.xml")
 eye_cascade=opencv1.CascadeClassifier("haarcascade_eye.xml")
 smile_cascade=opencv1.CascadeClassifier("haarcascade_smile.xml")
@@ -15,7 +15,6 @@ for x,y,w,z in faces[:]:
     face_name="faces.png"
     opencv1.imwrite(face_name,saved_faced)
 
-
 # while True:
 #     imgvid=cap
 # #for x,y,w,z in eyes[:]:
@@ -23,7 +22,6 @@ for x,y,w,z in faces[:]:
 #     #saved_faced=imgGray[y:y+z,x:x+w]
 #     #face_name="eyes.png"
 #     #opencv1.imwrite(face_name,saved_faced)
-
 
 # #for x,y,w,z in smiles[:]:
 # #    opencv1.rectangle(img,(x,y),(x+w,y+z),(0,225,0),2) 
@@ -33,4 +31,4 @@ for x,y,w,z in faces[:]:
 opencv1.imshow("face detector",img)
 
 
-​opencv1.waitKey(0)
+opencv1.waitKey(0)
